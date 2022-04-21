@@ -1,4 +1,4 @@
-var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
+var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PN", "10PM", "11PM", "12AM"];
 
 function makeTimeblocks(hour, existingTodo = "") {
   //build some additional logic for if time is past present or future;
