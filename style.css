@@ -1,7 +1,7 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1px;
 }
 
 textarea {
@@ -11,6 +11,13 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+#currentDay .lead {
+  display: inline;
+  text-align: center;
+  color: black;
+  border-radius: 0;
 }
 
 .jumbotron {
@@ -27,7 +34,7 @@ textarea {
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .row {
@@ -37,23 +44,25 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #9668b4;
   color: #000000;
   border-top: 1px dashed #000000;
+  text-align: center;
+  padding: 40px 14px 30px 2px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #e8f079;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #6186ff;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #5f5f5f;
   color: white;
 }
 
@@ -61,7 +70,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #6785c5;
   color: white;
 }
 

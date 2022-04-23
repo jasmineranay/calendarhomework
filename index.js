@@ -1,4 +1,18 @@
-var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PN", "10PM", "11PM", "12AM"];
+var hours = ["5:00AM","6:00AM","7:00AM","8:00AM","9:00AM","10:00AM","11:00AM","12:00PM","1:00PM","2:00PM","3:00PM","4:00PM","5:00PM","6:00PM","7:00PM","8:00PM","9:00PM","10:00PM","11:00PM","12:00AM","1:00AM","2:00AM","3:00AM","4:00AM"];
+var currentDateObj = new Date();
+var currentTime = document.getElementById("#currentDay")
+var numberOfMlSeconds = currentDateObj.getTime();
+var addMlSeconds = 60 * 60 * 1000;
+var newDateObj = new Date(numberOfMlSeconds + addMlSeconds);
+
+function addHoursToDate(objDate, intHours) {
+  var numberOfMlSeconds = objDate.getTime();
+  var addMlSeconds = (intHours * 60) * 60 * 1000;
+  var newDateObj = new Date(numberOfMlSeconds + addMlSeconds);
+
+  return newDateObj;
+  addHoursToDate(Date.now(), 24)
+}
 
 function makeTimeblocks(hour, existingTodo = "") {
   //build some additional logic for if time is past present or future;
