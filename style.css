@@ -74,12 +74,12 @@ textarea {
 }
 
 h2.display-4 {
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
