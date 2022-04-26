@@ -5,6 +5,16 @@ var numberOfMlSeconds = currentDateObj.getTime();
 var addMlSeconds = 60 * 60 * 1000;
 var newDateObj = new Date(numberOfMlSeconds + addMlSeconds);
 
+var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  document.getElementById("currentDay").innerHTML = date;
+
+setInterval(function(){
+  var time = moment().format("h:mm:ss a")
+  document.getElementById("currentTime").innerHTML = time;
+}, 1000) 
+
+
 function addHoursToDate(objDate, intHours) {
   var numberOfMlSeconds = objDate.getTime();
   var addMlSeconds = (intHours * 60) * 60 * 1000;
@@ -44,8 +54,8 @@ for (var i = 0; i < 9; i++) {
 
 //still need to add click event listeners so when a block is clicked, grabs the value from that textarea, and saves it in localStorage.
 var btns = document.querySelectorAll(".saveBtn");
-console.log(btns[0]); //ONLY SELECTS THE FIRST ELEMENT THAT MATCHES SELECTOR
-
+console.log(btns); //ONLY SELECTS THE FIRST ELEMENT THAT MATCHES SELECTOR
+btns.localStorage
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", functionToHandleClickOnSaveBtn);
 }
